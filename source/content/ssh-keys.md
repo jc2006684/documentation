@@ -1,4 +1,115 @@
----
+---<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogueMiller - Loja de eBooks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .ebook {
+            background: #fff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .ebook h2 {
+            margin-top: 0;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .contact-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #contacts {
+            display: none;
+            margin-top: 10px;
+        }
+        a {
+            color: #28a745;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 BlogueMiller - Loja de eBooks</h1>
+        <p>Compre seus eBooks digitais de forma rápida e segura</p>
+    </header>
+
+    <div class="container">
+        <div class="ebook">
+            <h2>💡 Como criar renda online</h2>
+            <p>Aprenda passo a passo como gerar renda pela internet.</p>
+            <button class="contact-btn">Comprar agora</button>
+        </div>
+
+        <div class="ebook">
+            <h2>🚀 Marketing de Afiliados</h2>
+            <p>Descubra como vender produtos digitais e ganhar comissões.</p>
+            <button class="contact-btn">Comprar agora</button>
+        </div>
+
+        <div class="ebook">
+            <h2>🎯 O poder das pequenas vitórias</h2>
+            <p>Guia motivacional para crescer um passo de cada vez.</p>
+            <button class="contact-btn">Comprar agora</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="contact-btn" onclick="toggleContacts()">📞 Contatos</button>
+        <div id="contacts">
+            <p>WhatsApp: <a href="https://wa.me/244927183" target="_blank">+244 927183</a></p>
+            <p>Email: <a href="mailto:jf20071617@gmail.com">jf20071617@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContacts() {
+            var c = document.getElementById('contacts');
+            if (c.style.display === 'none') {
+                c.style.display = 'block';
+            } else {
+                c.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
 title: Generate and Add SSH Keys
 description: Understand how to generate SSH keys to configure Git, SFTP, or Drupal Drush.
 tags: [security, dashboard, ssh]
